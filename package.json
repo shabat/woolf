@@ -1,0 +1,28 @@
+{
+  "name": "cv_analyze",
+  "version": "1.0.0",
+  "description": "tRPC server with single endpoint that analyzes job description in accordance with CV",
+  "scripts": {
+    "dev:server": "tsx watch src/server",
+    "dev:client": "wait-port 3000 && tsx src/client",
+    "format": "prettier --write \"**/*.ts\""
+  },
+  "author": "shabat",
+  "license": "ISC",
+  "dependencies": {
+    "@trpc/client": "^10.45.2",
+    "@trpc/server": "^10.45.2",
+    "@types/pdf-parse": "^1.1.4",
+    "dotenv": "^16.4.7",
+    "pdf-parse": "^1.1.1",
+    "prettier": "^3.5.0",
+    "tsx": "^4.19.2",
+    "wait-port": "^1.1.0",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.13.1",
+    "typescript": "^5.7.3"
+  }
+}
